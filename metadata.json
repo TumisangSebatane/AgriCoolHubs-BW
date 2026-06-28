@@ -1,0 +1,6 @@
+{
+  "name": "Agricool Hubs",
+  "description": "Solar-powered modular cold storage and agricultural preservation infrastructure in Botswana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
