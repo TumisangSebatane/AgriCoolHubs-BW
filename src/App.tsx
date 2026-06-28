@@ -881,7 +881,7 @@ export default function App() {
               <h4 className="text-xs font-bold text-primary uppercase tracking-wider">Contact Us</h4>
               <div className="flex items-center gap-2.5 text-on-surface-variant text-xs">
                 <Mail className="w-4 h-4 text-primary shrink-0" />
-                <a href="mailto:agricoolhubsproject@gmail.com" className="hover:underline">agricoolhubsproject@gmail.com</a>
+                <a href="mailto:team@agricoolhubs.com" className="hover:underline">team@agricoolhubs.com</a>
               </div>
               <div className="flex items-center gap-2.5 text-on-surface-variant text-xs">
                 <MapPin className="w-4 h-4 text-primary shrink-0" />
