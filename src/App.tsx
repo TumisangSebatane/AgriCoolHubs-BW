@@ -142,22 +142,6 @@ export default function App() {
               Contact
             </button>
             
-            {/* Google Forms sync / Admin Dashboard Router */}
-            <button 
-              onClick={() => { setActiveTab(activeTab === "admin" ? "landing" : "admin"); }} 
-              className={`text-sm font-bold flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all ${
-                activeTab === "admin" 
-                  ? "bg-primary text-on-primary" 
-                  : "bg-surface-container hover:bg-surface-container-high text-primary border border-outline-variant"
-              }`}
-            >
-              <Database className="w-4 h-4" /> 
-              Admin Portal
-              {adminNotificationCount > 0 && (
-                <span className="bg-secondary text-on-secondary-container text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold animate-bounce">
-                  {adminNotificationCount}
-                </span>
-              )}
             </button>
 
             <button 
@@ -202,17 +186,7 @@ export default function App() {
             >
               Contact
             </button>
-            <button 
-              onClick={() => { setActiveTab("admin"); setMobileMenuOpen(false); }}
-              className="text-left font-bold text-sm text-primary p-2 rounded bg-primary-fixed/50 flex items-center justify-between"
-            >
-              <span className="flex items-center gap-1.5"><Database className="w-4 h-4" /> Go to Workspace Admin</span>
-              {adminNotificationCount > 0 && (
-                <span className="bg-secondary text-on-secondary-container text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">
-                  {adminNotificationCount}
-                </span>
-              )}
-            </button>
+           
             <button 
               onClick={() => { setActiveTab("landing"); setMobileMenuOpen(false); setTimeout(() => document.getElementById("pilot")?.scrollIntoView({ behavior: "smooth" }), 100); }}
               className="bg-primary text-on-primary font-bold text-center py-3 rounded-xl text-sm"
